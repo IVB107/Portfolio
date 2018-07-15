@@ -1,0 +1,252 @@
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+body {
+  display: flex;
+  align-items: center;
+  max-width: 90vw;
+  font-family: 'Abel', sans-serif;
+  background-color: rgba(0, 120, 160, 1);
+  background-size: 100% 100%;
+}
+main {
+  display: flex;
+  max-width: 100%;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  display: flex;
+  min-height: 100vh;
+  max-width: 90%;
+}
+/* --- Main Section --- */
+.section-container {
+  max-width: 90%;
+}
+.title-container {
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+.main-title {
+  display: flex;
+  width: 100%;
+}
+.main-title h1 {
+  font-size: 48px;
+  margin: 0px;
+}
+h1 {
+  font-size: 28px;
+  margin: 0px;
+}
+hr {
+  color: rgba(255, 255, 255, .5);
+  width: 100%;
+  margin: none;
+  padding: 0px;
+}
+.subtitles {
+  flex-grow: 1;
+}
+.subtitles span {
+  align-self: flex-start;
+  height: 15vh;
+}
+.subtitles p {
+  margin: 0px;
+}
+#sub {
+  margin: 0px 0px;
+  font-style: normal;
+  transition-duration: .5s;
+}
+/* --- About Section --- */
+.container {
+  justify-content: flex-start;
+  align-items: center;
+}
+.title-margin {
+  margin: 5vh 0vw 0vh;
+}
+.section-title h1 {
+  /* margin: 3vh 0vw; */
+  font-size: 28px;
+  padding: 0px;
+  align-self: flex-start;
+}
+.about-info, .description {
+  margin: 8px 0px;
+}
+.text {
+  text-indent: 30px;
+  font-size: 16px;
+}
+.about-photo {
+  margin: 2vh 1vw;
+}
+.photo {
+  width: 80vw;
+  box-shadow: 0px 8px 12px rgb(60, 60, 60);
+}
+/* --- Skills Section --- */
+.content {
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.list-container {
+  width: 100%;
+  margin: 20px 0px;
+}
+.list-title {
+  margin: 0vh 0vw;
+  padding: 0px;
+  width: 20vw;
+  font-size: 24px;
+  text-decoration: underline;
+}
+.list {
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  margin: 0vh 5vw;
+  padding-left: 10vw;
+}
+.list li {
+  align-items: center;
+  margin: 1vh 0vw;
+  list-style-type: square;
+}
+/* --- Work Section --- */
+.work-row {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.sample-container {
+  width: 100%;
+  /* height: 60%; */
+  margin: 10px 16px;
+}
+#sample1 {
+  width: 100%;
+  background: url("./Images/WikiViewer.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#sample2 {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  background: url("./Images/SimonGame.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#sample3 {
+  width: 100%;
+  background: url("./Images/MacTacToe.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#sample4 {
+  width: 100%;
+  background: url("./Images/JavaScriptCalculator.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#sample5 {
+  width: 100%;
+  background: url("./Images/PomodoroClock.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#sample6 {
+  width: 100%;
+  background: url("./Images/WeatherApp.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.work-sample {
+  transition: .2s ease;
+}
+.info-container {
+  min-height: 150px;
+  min-width: 100%;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  transition: .2s ease;
+  margin: 10px 0px;
+}
+.project-info {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  transition: .2s ease;
+  align-self: center;
+  text-align: center;
+  margin: 0px 10px;
+}
+.project-name {
+  font-size: 18px;
+  margin: 6px 0px;
+}
+/* --- Contact --- */
+#contact {
+
+}
+.link-container {
+  flex-wrap: wrap;
+  /* margin: 5% 0%; */
+  width: 100%;
+  text-decoration: none;
+}
+.link-container a {
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+}
+.link {
+  height: 80px;
+  width: 80px;
+  stroke: rgba(255, 255, 255, .8);
+  stroke-width: .5;
+  transition: .1s ease;
+  fill: rgba(255, 255, 255, 0);
+}
+.link:hover {
+  height: 90px;
+  width: 90px;
+  stroke-width: 1;
+  transition: .1s ease;
+  stroke: rgba(255, 255, 255, 1);
+}
+.copyright {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 16px 0px 0px;
+}
+.copyright p {
+  font-size: 12px;
+  text-align: center;
+}
